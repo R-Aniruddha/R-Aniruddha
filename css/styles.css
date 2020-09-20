@@ -1,14 +1,16 @@
 :root {
   --main-text-color: white;
+  --pyramid-color: rgba(121, 112, 112, 0.61);
+
 }
 
 /* 
   --text-color: #4666FF;
-
+  var(--pyramid-color)
     color: var(--text-color);
 */
 
-body, html {
+html, body {
   height: 100%;
 }
 
@@ -18,40 +20,16 @@ h1, h2, h3, h4, h5, h6{
 }
 
 p{ 
-  font-size: 20px;
-  font-family: "Lucida Console", Courier, monospace;
-}
-
-
-/* Background Cover Image */
-.tinted-image {
-  background: 
-    /* top to bottom gradient */ 
-    linear-gradient(
-      rgba(0, 0, 0, 0.9), 
-      rgba(0, 0, 0, 0.1)
-    ),
-    /* image */
-    url("https://res.cloudinary.com/ani10/image/upload/v1599831556/Covers/cover_o6hidm.jpg");
-
-
-    /* Height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    color:var(--main-text-color);
-    
+	line-height: 1.6;
+  	font-size: 20px;
+  	font-family: "Lucida Console", Courier, monospace;
 }
 
 /* Container for main content */
 .main-content{
   background-color: rgb(0, 0, 0);
   color: seashell;
-  padding: 0 60px 60px 60px;
+  padding: 20px 60px 40px 60px;
 }
 
 .center-content{
@@ -81,22 +59,126 @@ p{
 }
  */
 
+nav{
+	text-align: center;
+}
+
 .navbar{
   padding: 0;
 }
+
+.navbar-toggler{
+	background-color: rgb(255 255 255 / 17%);
+    margin: 20px 50px 0 0;
+}
+
+/* Background Cover Image */
+.tinted-image-home {
+  background: 
+    /* top to bottom gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.9), 
+      rgba(0, 0, 0, 0.3)
+    ),
+    /* image */
+    url();
+
+
+    /* Height */
+    height: 100vh;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color:var(--main-text-color);
+}
+
+/* About Page Cover */ 
+.tinted-image-about {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.9), 
+      rgba(0, 0, 0, 0.3)
+    ),
+    /* image */
+    url("https://res.cloudinary.com/ani10/image/upload/v1599831556/Covers/cover_o6hidm.jpg");
+
+
+    /* Height */
+    height: 100vh;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color:var(--main-text-color);
+}
+
+/* Skills Page Cover */ 
+.tinted-image-skills{
+
+  background: 
+	
+	linear-gradient(
+      rgba(0, 0, 0, 0.9), 
+      rgba(0, 0, 0, 0.3)
+    ),
+
+  	url("https://res.cloudinary.com/ani10/image/upload/v1600609588/Covers/background-night_msrbi1.jpg");
+
+
+    /* Height */
+    height: 100vh;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color:var(--main-text-color);
+}
+
+/* Contact Page Cover */ 
+.tinted-image-contact{
+
+  background: 
+	
+	linear-gradient(
+      rgba(0, 0, 0, 0.9), 
+      rgba(0, 0, 0, 0.3)
+    ),
+
+  	url("https://res.cloudinary.com/ani10/image/upload/v1600609518/Covers/background-map_oy0p8l.jpg");
+
+
+    /* Height */
+    height: 45vh;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color:var(--main-text-color);
+}
+
 
 /* Custom Button */
 
 .btn-cstm {
 	 --offset: 10px;
 	 --border-size: 2px;
+	 margin: 30px 0 0 10px;
 	 display: block;
 	 position: relative;
 	 padding: 1em 1.5em;
 	 appearance: none;
 	 border: 0;
 	 background: transparent;
-   color: var(--main-text-color);
+   	 color: var(--main-text-color);
 	 text-transform: uppercase;
 	 letter-spacing: 0.25em;
 	 outline: none;
@@ -114,6 +196,7 @@ p{
  .btn-cstm:hover {
    background: rgba(100, 0, 0, .03);
    color: var(--main-text-color);
+   
 
 }
  .btn-cstm__horizontal, .btn-cstm__vertical {
@@ -161,8 +244,6 @@ p{
  
 
 
-
-
 /* Underline Animation for Nav Links */
 
 .nav-link {
@@ -202,3 +283,113 @@ p{
   -webkit-transform: translateX(-50%) scaleX(1);
           transform: translateX(-50%) scaleX(1);
 }
+
+
+
+/* Contact Form */
+#contact-form{
+	font-size: larger;
+}
+
+#contact-form button{
+	border-radius: 5px;
+	margin: 5px auto;
+	padding: 5px;
+}
+
+#contact-form input, textarea{
+	padding: 5px;
+	margin: 10px 0;
+	width: 100%;
+	font-family: "Lucida Console", Courier, monospace;
+	border-radius: 5px;
+}
+
+
+/* 3D Cube */
+
+.pyramid-container {
+	 perspective: 800px;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 height: 100%;
+	 width: 100%;
+}
+ .pyramid-container:hover {
+   transform: scale(1.1);
+}
+ .pyramid-container:hover .side {
+	 opacity: 1;
+}
+ .cube {
+	 transform-style: preserve-3d;
+	 position: relative;
+	 width: 200px;
+	 height: 200px;
+	 animation: rotate 20s ease-in-out infinite;
+	 transform-origin: center center;
+}
+ .side {
+	 position: absolute;
+	 width: 200px;
+	 height: 200px;
+	 background-color: #333;
+	 opacity: 0.95;
+	 background-size: cover;
+	 background-repeat: no-repeat;
+}
+ .back {
+	 transform: translateZ(-100px) rotateX(180deg);
+	 background-image: url(https://res.cloudinary.com/ani10/image/upload/v1599831655/Icons/php_qcoinq.png);
+}
+ .left {
+	 transform: translateX(-100px) rotateY(90deg);
+	 background-image: url(https://res.cloudinary.com/ani10/image/upload/v1600434802/Icons/jquery2_mnidhl.png);
+}
+ .right {
+	 transform: translateX(100px) rotateY(90deg);
+	 background-image: url(https://res.cloudinary.com/ani10/image/upload/v1599831653/Icons/bootstrap_edrhvh.png);
+}
+ .top {
+	 transform: translateY(-100px) rotateX(90deg);
+	 background-image: url(https://res.cloudinary.com/ani10/image/upload/v1599831653/Icons/html5_drbcmj.png);
+}
+ .bottom {
+	 transform: translateY(100px) rotateX(270deg);
+	 background-image: url(https://res.cloudinary.com/ani10/image/upload/v1599831652/Icons/css3_gcn2yc.png);
+}
+ .front {
+	 transform: translateZ(100px);
+	 background-image: url(https://res.cloudinary.com/ani10/image/upload/v1600435392/Icons/js2_wwpctn.png);
+}
+ @keyframes rotate {
+	 0% {
+		 transform: rotateX(0);
+	}
+	 12.5% {
+		 transform: rotateY(90deg);
+	}
+	 25% {
+		 transform: rotateY(270deg);
+	}
+	 37.5% {
+		 transform: rotateY(270deg);
+	}
+	 50% {
+		 transform: rotateY(360deg);
+	}
+	 62.5% {
+		 transform: rotateX(90deg);
+	}
+	 75% {
+		 transform: rotateX(180deg);
+	}
+	 87.5% {
+		 transform: rotateX(270deg);
+	}
+	 100% {
+		 transform: rotateX(360deg);
+	}
+}
+ 
