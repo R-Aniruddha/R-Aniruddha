@@ -38,7 +38,6 @@ p{
   justify-content: center; 
   /* Aligns vertically */
   align-items: center; 
-  height: 100%;
 }
 
 /* Glow Effect
@@ -111,10 +110,10 @@ nav{
   background: 
     linear-gradient(
       rgba(0, 0, 0, 0.9), 
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.6)
     ),
     /* image */
-    url("https://res.cloudinary.com/ani10/image/upload/v1599831556/Covers/cover_o6hidm.jpg");
+    url("../images/potrait.jpg");
 
 
     /* Height */
@@ -123,10 +122,27 @@ nav{
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+	background-size: cover;
 
     color:var(--main-text-color);
 }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	.tinted-image-about {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.9), 
+      rgba(0, 0, 0, 0.3)
+	), 
+	url("https://res.cloudinary.com/ani10/image/upload/v1599831556/Covers/cover_o6hidm.jpg");
+
+	background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	}
+ }
+
+
 
 /* Skills Page Cover */ 
 #skills-cover{
