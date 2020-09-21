@@ -34,8 +34,11 @@ p{
 
 .center-content{
   display: flex; 
+  /* Aligns horizontally */
   justify-content: center; 
+  /* Aligns vertically */
   align-items: center; 
+  height: 100%;
 }
 
 /* Glow Effect
@@ -126,30 +129,19 @@ nav{
 }
 
 /* Skills Page Cover */ 
-.tinted-image-skills{
-
-  background: 
-	
-	linear-gradient(
-      rgba(0, 0, 0, 0.9), 
-      rgba(0, 0, 0, 0.3)
-    ),
-
-  	url("https://res.cloudinary.com/ani10/image/upload/v1600609588/Covers/background-night_msrbi1.jpg");
-
+#skills-cover{
+ 
+	width:100%;
 
     /* Height */
-    height: 100vh;
+    height: 50vh;
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
 
     color:var(--main-text-color);
 }
 
-/* Skills Cover Heading Container */
+/* Skills Cover Heading Container 
 #skills-heading-container{
 	width: fit-content;
 	position: relative;
@@ -161,7 +153,7 @@ nav{
 	width: fit-content;
 	background-color: rgb(3 18 39 / 55%);
 }
-
+*/
 
 
 /* Contact Page Cover */ 

@@ -1,90 +1,107 @@
-/* Floating Words */
+/* Skills Cover Animation */
 
-window.onload = function (argument) {
+$('#skills-cover').Geometryangle({
+    // handle transparent colors
+    mesh: {
 
-    var text = "HTML5 CSS3 JAVASCRIPT ANGULAR REACT LARAVEL PHP JAVA C C++ MYSQL MONGODB BOOTSTRAP JQUERY SCSS SASS WORDPRESS HTML5 CSS3 JavaScript Angular React Laravel PHP Java C C++ MySql MongoDB Bootstrap JQuery SCSS SASS Wordpress GIT HEROKU ADOBE-XD VSCODE Git Heroku Adobe-XD VSCode HTML5 CSS3 JAVASCRIPT ANGULAR REACT LARAVEL PHP JAVA C C++ MYSQL MONGODB BOOTSTRAP JQUERY SCSS SASS WORDPRESS HTML5 CSS3 JavaScript Angular React Laravel PHP Java C C++ MySql MongoDB Bootstrap JQuery SCSS SASS Wordpress GIT HEROKU ADOBE - XD VSCODE Git Heroku Adobe - XD VSCode    ";
-    var words = {};
-    var words_attr = [];
-    string_handle(text);
+        width: 1.2,
+        height: 1.2,
 
-    var canvas = document.getElementById('floating-words');
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+        // How far should the mesh vary into z-space.
+        depth: 10,
 
-    if (canvas.getContext) {
-        var c = canvas.getContext('2d'),
-            w = canvas.width,
-            h = canvas.height;
+        // Number of columns for the mesh.
+        columns: undefined,
 
-        c.strokeStyle = 'red';
-        c.fillStyle = 'white';
-        c.lineWidth = 5;
+        columns_auto: true,
 
-        // constructor
-        Word = function (key) {
-            this.text = key;
-            this.x = Math.random() * w;
-            this.y = Math.random() * h;
-            this.font = words[key] * 12 + 'px arial'
-            this.speed = (words[key]);
-        }
-        for (key in words) {
-            words_attr.push(new Word(key));
-        }
-        console.log(words_attr.length);
+        // Number of rows for the mesh.
+        rows: undefined,
 
-        function animation() {
-            for (var i = 0; i < words_attr.length; i++) {
-                c.font = words_attr[i].font;
-                c.fillText(words_attr[i].text, words_attr[i].x, words_attr[i].y);
-                words_attr[i].width = c.measureText(words_attr[i].text).width;
-                c.stroke();
-            }
-            move();
-        }
+        rows_auto: true,
+        zoom: 1,
+        xRange: 0.8,
+        yRange: 0.1,
+        zRange: 1.0,
+        //Color
+        ambient: 'rgba(14, 0, 161, 0.9)',
+        diffuse: 'rgba(255, 255, 255, 1)',
+        background: 'rgb(0, 0, 0)',
+        speed: 0.0002,
+        fluctuationSpeed: 0.5,
+        fluctuationIntensity: 0,
+        onRender: function () {
+        },
+        floorPosition: false,
+        draw: true
 
-        function move() {
-            for (var i = 0; i < words_attr.length; i++) {
-                if (words_attr[i].x > w) {
-                    words_attr[i].x = -words_attr[i].width;
-                    words_attr[i].y = Math.random() * h;
-                } else {
-                    words_attr[i].x += words_attr[i].speed;
-                }
-            }
-        }
+    },
 
-        setInterval(function () {
-            c.clearRect(0, 0, w, h);
-            animation();
-        }, 24);
+
+    lights: {
+
+        // How many light sources belong to this light.
+        count: 1,
+
+        xyScalar: 1,
+
+        // Position of light source.
+        zOffset: 100,
+
+        ambient: 'rgba(15 42 204, 1)',
+        diffuse: 'rgba(129 172 243, 1)',
+        speed: 0.010,
+        gravity: 1200,
+
+        // Dampening of light's movements.
+        dampening: 0.95,
+
+        minLimit: 10,
+        maxLimit: null,
+        minDistance: 20,
+        maxDistance: 400,
+        autopilot: false,
+        draw: false, //show circle
+        bounds: FSS.Vector3.create(),
+        step: FSS.Vector3.create(
+            Math.randomInRange(0.2, 1.0),
+            Math.randomInRange(0.2, 1.0),
+            Math.randomInRange(0.2, 1.0)
+        )
+
+    },
+
+    // specify the thickness, color, stroke, etc. 
+    line: {
+
+        fill: "rgba(5, 14, 192, 0.9)",
+        thickness: 1,
+        fluctuationIntensity: 0,
+        fluctuationSpeed: 0.5,
+        draw: false
+
+    },
+
+    // Set the point attributes for the vertex. 
+    vertex: {
+
+        // Radius of vertice circle.
+        radius: 0,
+
+        fill: "rgba(0, 0, 0, 0)",
+
+        // Fluctuates opacity of vertex.
+        fluctuationSpeed: 0.5,
+
+        fluctuationIntensity: 0,
+        strokeWidth: 0,
+        strokeColor: "rgba(5, 14, 192, 0.9)",
+
+        // Instead of setting alpha channel to zero
+        // Set draw to false to avoid computing.
+        draw: false
 
     }
+});
 
-    function string_handle(str) {
-        var split_str = str.split(" ");
-        var word_array = [];
-        var word_count = [];
-        for (var i = 0; i < split_str.length; i++) {
-            check = true;
-            for (var j = 0; j <= word_array.length; j++) {
-                if (split_str[i] == word_array[j]) {
-                    word_count[j]++;
-                    check = false;
-                    break;
-                }
-            }
-            if (check) {
-                word_array.push(split_str[i]);
-                word_count.push(1);
-            }
-        }
-        for (var i = 0; i < word_array.length; i++) {
-            words[word_array[i]] = word_count[i];
-        }
-        return words;
-    }
-
-}
-
-/*End of Floating Words */
+/*End of Skills Cover Animation */
