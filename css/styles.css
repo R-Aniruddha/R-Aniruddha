@@ -151,9 +151,10 @@ nav{
 
 /* Skills Cover Heading Container */
 #skills-heading-container{
-	position: absolute; 
-	top:40%; 
-	left:40%; 	
+	width: fit-content;
+	position: relative;
+    top: -60%;
+    margin: auto	
 }
 
 #skills-heading-container p, h1{
