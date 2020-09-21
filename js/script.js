@@ -2,10 +2,10 @@
 
 window.onload = function (argument) {
 
-    var lyric = " HTML5 CSS3 JAVASCRIPT ANGULAR REACT LARAVEL PHP JAVA C C++ MYSQL MONGODB BOOTSTRAP JQUERY SCSS SASS WORDPRESS Html5 CSS3 JavaScript Angular React Laravel PHP Java C C++ MySql MongoDB Bootstrap JQuery SCSS SASS Wordpress git heroku adobe-xd vscode GIT HEROKU ADOBE-XD VSCODE Git Heroku Adobe-XD VSCode";
+    var text = "HTML5 CSS3 JAVASCRIPT ANGULAR REACT LARAVEL PHP JAVA C C++ MYSQL MONGODB BOOTSTRAP JQUERY SCSS SASS WORDPRESS HTML5 CSS3 JavaScript Angular React Laravel PHP Java C C++ MySql MongoDB Bootstrap JQuery SCSS SASS Wordpress GIT HEROKU ADOBE-XD VSCODE Git Heroku Adobe-XD VSCode HTML5 CSS3 JAVASCRIPT ANGULAR REACT LARAVEL PHP JAVA C C++ MYSQL MONGODB BOOTSTRAP JQUERY SCSS SASS WORDPRESS HTML5 CSS3 JavaScript Angular React Laravel PHP Java C C++ MySql MongoDB Bootstrap JQuery SCSS SASS Wordpress GIT HEROKU ADOBE - XD VSCODE Git Heroku Adobe - XD VSCode    ";
     var words = {};
     var words_attr = [];
-    string_handle(lyric);
+    string_handle(text);
 
     var canvas = document.getElementById('floating-words');
     canvas.width = window.innerWidth;

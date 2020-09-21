@@ -69,8 +69,16 @@ nav{
 
 .navbar-toggler{
 	background-color: rgb(255 255 255 / 17%);
+    margin: 20px 20px 0 0;
+}
+
+@media (min-width: 576px) { 
+	.navbar-toggler{
     margin: 20px 50px 0 0;
 }
+ }
+
+
 
 /* Background Cover Image */
 .tinted-image-home {
@@ -140,6 +148,20 @@ nav{
 
     color:var(--main-text-color);
 }
+
+/* Skills Cover Heading Container */
+#skills-heading-container{
+	position: absolute; 
+	top:40%; 
+	left:40%; 	
+}
+
+#skills-heading-container p, h1{
+	width: fit-content;
+	background-color: rgb(3 18 39 / 55%);
+}
+
+
 
 /* Contact Page Cover */ 
 .tinted-image-contact{
