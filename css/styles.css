@@ -1,7 +1,7 @@
 :root {
   --main-text-color: white;
   --pyramid-color: rgba(121, 112, 112, 0.61);
-
+	font-size: 20px;
 }
 
 /* 
@@ -19,11 +19,22 @@ h1, h2, h3, h4, h5, h6{
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
 }
+h1{
+	font-size: 2.5rem;
+}
+
+h2{
+	text-align: center;
+	margin: 2rem auto;
+}
 
 p{ 
 	line-height: 1.6;
-  	font-size: 20px;
   	font-family: "Lucida Console", Courier, monospace;
+}
+
+blockquote{
+	font-size: 1.2rem;
 }
 
 /* Container for main content */
@@ -121,17 +132,13 @@ nav{
   background: 
     linear-gradient(
       rgba(0, 0, 0, 0.9), 
-      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     );
 
 
     /* Height */
-    height: 100vh;
+    height: 50vh;
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-	background-size: cover;
 
     color:var(--main-text-color);
 }
@@ -189,7 +196,7 @@ nav{
 	
 	linear-gradient(
       rgba(0, 0, 0, 0.9), 
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.6)
     ),
 
   	url("https://res.cloudinary.com/ani10/image/upload/v1600609518/Covers/background-map_oy0p8l.jpg");
@@ -355,7 +362,7 @@ nav{
 	margin: 10px 0;
 	width: 100%;
 	font-family: "Lucida Console", Courier, monospace;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 /* Image with Shadow */

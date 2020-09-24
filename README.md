@@ -1,4 +1,14 @@
-### Hi there 👋
+### Hi there 👋 This is my portfolio website that I'm currently working on
+
+##I'm using Bootstrap to build it
+
+
+#Photo Credits:
+
+#Animation Credits:
+- Geometric Background (https://codepen.io/smangang/pen/EXmOaB)
+- Floating Image (https://codepen.io/Harsh29/pen/EGQxYP?editors=1100)
+
 
 <!--
 **R-Aniruddha/R-Aniruddha** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
