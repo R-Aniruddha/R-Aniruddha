@@ -77,10 +77,9 @@ blockquote{
 	width: 80%;
 	padding: 1rem 0;
 	margin: auto;
-	columns: 5;
-	column-width: 20%;
-	list-style-position: outside;
-	line-height: 2.25rem;
+	columns: 1;
+	column-width: 100%;
+	line-height: 1.25rem;
 }
 
 nav{
@@ -155,20 +154,34 @@ nav{
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 	.tinted-image-home {
-  background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.9), 
-      rgba(0, 0, 0, 0.3)
-	), 
-	url("https://res.cloudinary.com/ani10/image/upload/v1599831556/Covers/cover_o6hidm.jpg");
+	  	background: 
+		linear-gradient(
+		rgba(0, 0, 0, 0.9), 
+		rgba(0, 0, 0, 0.3)
+		), 
+		url("https://res.cloudinary.com/ani10/image/upload/v1599831556/Covers/cover_o6hidm.jpg");
 
 
-	height: 100%;
+		height: 100%;
 
-	background-position: center;
-    background-repeat: no-repeat;
-	background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
+
+	
+	#skills-list{
+		width: 80%;
+		padding: 1rem 0;
+		margin: auto;
+		columns: 5;
+		column-width: 20%;
+		list-style-position: outside;
+		line-height: 2.25rem;
+	}
+
+	
+
  }
 
 
@@ -403,11 +416,6 @@ nav{
 	-webkit-columns: 2;
   	-moz-columns: 2;
 }
-
-
-
-
-
 
 
 
