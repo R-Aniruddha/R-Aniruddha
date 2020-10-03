@@ -71,7 +71,6 @@ blockquote{
 
 .lead{
 	margin: auto;
-	width: 60%;
 }
 
 #skills-list{
@@ -100,8 +99,8 @@ nav{
 @media (min-width: 576px) { 
 	.navbar-toggler{
     margin: 20px 50px 0 0;
+	}
 }
- }
 
 /* Override Bootstrap List-Group Styling */
 
@@ -127,8 +126,7 @@ nav{
     /* image */
 	url("https://res.cloudinary.com/ani10/image/upload/v1601222120/Profile/potrait_tyyima.jpg") ;	
 	
-    /* Height */
-    height: max-content;
+	min-height: fit-content;
 
     /* Center and scale the image nicely */
     background-position: center;
