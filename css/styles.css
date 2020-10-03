@@ -74,26 +74,15 @@ blockquote{
 	width: 60%;
 }
 
-/* Glow Effect
-.glow {
-  
-  color: var(--main-text-color);
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+#skills-list{
+	width: 80%;
+	padding: 1rem 0;
+	margin: auto;
+	columns: 5;
+	column-width: 20%;
+	list-style-position: outside;
+	line-height: 2.25rem;
 }
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0065fd, 0 0 40px #0065fd, 0 0 50px #0065fd, 0 0 60px #0065fd, 0 0 70px #0065fd;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #4de4ff, 0 0 40px #4de4ff, 0 0 50px #4de4ff, 0 0 60px #4de4ff, 0 0 70px #4de4ff, 0 0 80px #4de4ff;
-  }
-}
- */
 
 nav{
 	text-align: center;
@@ -139,7 +128,7 @@ nav{
 	url("https://res.cloudinary.com/ani10/image/upload/v1601222120/Profile/potrait_tyyima.jpg") ;	
 	
     /* Height */
-    height: 100%;
+    height: max-content;
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -174,6 +163,9 @@ nav{
       rgba(0, 0, 0, 0.3)
 	), 
 	url("https://res.cloudinary.com/ani10/image/upload/v1599831556/Covers/cover_o6hidm.jpg");
+
+
+	height: 100%;
 
 	background-position: center;
     background-repeat: no-repeat;
