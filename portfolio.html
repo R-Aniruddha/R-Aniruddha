@@ -21,7 +21,7 @@
 
 <body>
   
-  <div class="tinted-image-contact">
+  <div class="jumbotron jumbotron-fluid tinted-image-contact">
 
     <nav class="navbar navbar-expand-md navbar-dark navbar-static-top">
       <a class="navbar-brand" href="#"></a>
@@ -49,87 +49,164 @@
         </ul>
       </div>
     </nav>
-
-    <div class="text-center" style="height: 100%;">
-      <h1 class="mt-5">Portfolio</h1>
-      <br>
-      <p class="w-50 m-auto">
-        Some of the projects I have worked on  for my own interest, classes and an internship.
-      </p>
+    <div class="container text-center">
+      <h1 class="display-4 mt-1">Portfolio</h1>
+      <p class="lead">Some of the projects I have worked on over the years.</p>
     </div>
   </div>
   
   <div class="container-fluid main-content">
-    <div class="row p-4">
 
-      <div class="card col-md-3" >
-        <img src="https://res.cloudinary.com/ani10/image/upload/v1599831199/samples/cloudinary-icon.png" class="card-img-top mx-auto" alt="..." height="150px" width="auto">
-        <div class="card-body">
-          <h4 class="card-title">Project Title</h4>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the bulk of the card's content.
-          </p>
-          <h5>Technologies Used</h5>
-          <ul>
-            <li>Angular</li>
-            <li>HTML, CSS & JS</li>
-            <li>TypeScript</li>
-          </ul>
-          <a href="#" class="btn btn-primary   disabled" role="button" aria-disabled="true">Live Preview</a>
-          <a href="#">
-            <img src="https://res.cloudinary.com/ani10/image/upload/v1599831653/Icons/github2_csnwba.png" alt="Github Icon" height="50px">
-          </a>
+    <div class="row card-container">
+
+      <div class="col-md-4 card">
+        <img class="card-image" src="images\AVC Portal Screenshot 2 .png" alt="AVC Portal Screenshot" width="80%">
+        <div class="card-overlay">
+          <div class="card-text">
+            <h5 class="text-center">Angular - Website Portal</h5>
+            <button type="button" class="btn btn-outline-light mt-2" data-toggle="modal" data-target="#avcModal">
+              Learn More
+            </button>
+          </div>
         </div>
       </div>
 
-      <div class="card col-md-3">
-        <img src="https://res.cloudinary.com/ani10/image/upload/v1599831199/samples/cloudinary-icon.png"
-          class="card-img-top mx-auto" alt="..." height="150px" width="auto">
-        <div class="card-body">
-          <h4 class="card-title">Project Title</h4>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the bulk of the card's content.
-          </p>
-          <h5>Technologies Used</h5>
-          <ul>
-            <li>Angular</li>
-            <li>HTML, CSS & JS</li>
-            <li>TypeScript</li>
-          </ul>
+      <div class="modal fade" id="avcModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Auroville Consulting Website Portal</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                A website portal to all of AVC and their affiliate partners' websites. 
+                A mini project to rebuild an existing website with Angular and experiment with the framework.
+              </p>
+              <h6>Technologies Used</h6>
+              <ul>
+                <li>Angular</li>
+                <li>HTML & SCSS</li>
+                <li>TypeScript</li>
+                <li>JSON</li>
+                <li>NPM</li>
+                <li>Material Design Theme</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <a href="#">
+                <img src="https://res.cloudinary.com/ani10/image/upload/v1599831653/Icons/github2_csnwba.png" alt="Github Icon"
+                  height="50px">
+              </a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 card">
+        <img class="card-image" src="images\Corona Screenshot.png" alt=" Screenshot" width="100%">
+        <div class="card-overlay">
+          <div class="card-text">
+            <h5 class="text-center">Spring Boot Java - Covid-19 Website </h5>
+            <button type="button" class="btn btn-outline-light mt-2" data-toggle="modal" data-target="#covid">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="covid" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Coronavirus Statistics Website</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                A website portal to all of AVC and their affiliate partners' websites.
+                A mini project to rebuild an existing website with Angular and experiment with the framework.
+              </p>
+              <h6>Technologies Used</h6>
+              <ul>
+                <li>Spring Boot - Java</li>
+                <li>HTML, CSS & JS</li>
+                <li>JSON</li>
+                <li>Bootstrap</li>
+                <li>JQuery</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <a href="https://github.com/R-Aniruddha/CoronaStatistics">
+                <img src="https://res.cloudinary.com/ani10/image/upload/v1599831653/Icons/github2_csnwba.png"
+                  alt="Github Icon" height="50px">
+              </a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 card">
+        <img class="card-image" src="images/ICare Screenshot.png" alt="ICare Screenshot" width="100%">
+        <div class="card-overlay">
+          <div class="card-text">
+            <h5 class="text-center">PHP - Smart Care Platform</h5>
+            <button type="button" class="btn btn-outline-light mt-2" data-toggle="modal" data-target="#icare">
+              Learn More
+            </button>
+            <!--
+
+            -->
+
+
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="icare" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Smart Healthcare System Platform</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                University Group Project to create a website that will display data provided by sensors, offer registration & logging
+                in features as well as exchanges between the users.
+              </p>
+              <h6>Technologies Used</h6>
+              <ul>
+                <li>HTML, CSS & JS</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <a href="https://github.com/IcareTech-isep/Website">
+                <img src="https://res.cloudinary.com/ani10/image/upload/v1599831653/Icons/github2_csnwba.png" alt="Github Icon"
+                  height="50px">
+              </a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       
-          <a href="#" class="btn btn-primary   disabled" role="button" aria-disabled="true">Live Preview</a>
-          <a href="#">
-            <img src="https://res.cloudinary.com/ani10/image/upload/v1599831653/Icons/github2_csnwba.png" alt="Github Icon"
-              height="50px">
-          </a>
-        </div>
-      </div>
-
-      <div class="card col-md-3">
-        <img src="https://res.cloudinary.com/ani10/image/upload/v1599831199/samples/cloudinary-icon.png"
-          class="card-img-top mx-auto" alt="..." height="150px" width="auto">
-        <div class="card-body">
-          <h4 class="card-title">Project Title</h4>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the bulk of the card's content.
-          </p>
-          <h5>Technologies Used</h5>
-          <ul>
-            <li>Angular</li>
-            <li>HTML, CSS & JS</li>
-            <li>TypeScript</li>
-          </ul>
       
-          <a href="#" class="btn btn-primary   disabled" role="button" aria-disabled="true">Live Preview</a>
-          <a href="#">
-            <img src="https://res.cloudinary.com/ani10/image/upload/v1599831653/Icons/github2_csnwba.png" alt="Github Icon"
-              height="50px">
-          </a>
-        </div>
-      </div>
-          
-
     </div>
+
   </div>
 
 

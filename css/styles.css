@@ -46,7 +46,7 @@ blockquote{
 .main-content{
   background-color: rgb(0, 0, 0);
   color: seashell;
-  padding: 40px 100px;
+  padding: 80px 100px;
 }
 
 .center-content{
@@ -55,6 +55,23 @@ blockquote{
   justify-content: center; 
   /* Aligns vertically */
   align-items: center; 
+}
+
+/* Override Bootstrap styling for Cover */
+
+.jumbotron{
+	margin: 0;
+	padding-top: 0;
+	border-radius: unset;
+	background-color: unset;
+}
+.display-4{
+	font-size: 3rem;
+}
+
+.lead{
+	margin: auto;
+	width: 60%;
 }
 
 /* Glow Effect
@@ -119,10 +136,10 @@ nav{
       rgba(0, 0, 0, 0.3)
 	),
     /* image */
-	url("../images/potrait.jpg") ;	
+	url("https://res.cloudinary.com/ani10/image/upload/v1601222120/Profile/potrait_tyyima.jpg") ;	
 	
     /* Height */
-    height: 100vh;
+    height: 100%;
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -141,9 +158,9 @@ nav{
     );
 
 
-    /* Height */
-    height: 50vh;
-
+    /* Height 
+    height: 50%;
+	*/
 
     color:var(--main-text-color);
 }
@@ -168,14 +185,6 @@ nav{
 
 /* Skills Page Cover */ 
 #skills-cover{
- 
-	width:100%;
-
-    /* Height */
-    height: 50vh;
-
-
-
     color:var(--main-text-color);
 }
 
@@ -207,9 +216,9 @@ nav{
   	url("https://res.cloudinary.com/ani10/image/upload/v1600609518/Covers/background-map_oy0p8l.jpg");
 
 
-    /* Height */
-    height: 45vh;
-
+    /* Height 
+    height: 45%;
+*/
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -227,7 +236,7 @@ nav{
 	 margin: 30px 0 0 10px;
 	 display: block;
 	 position: relative;
-	 padding: 1em 1.5em;
+	 padding: 1rem 1.5rem;
 	 appearance: none;
 	 border: 0;
 	 background: transparent;
@@ -339,15 +348,76 @@ nav{
 
 /* Portfolio Cards */
 
-.card{
-	background-color:#698c9d;
-	margin: 10px auto;
-	padding: 15px;
+.card-container{
+	padding: 0.7rem 1rem;
+	position: relative;
+
 }
 
-.card:hover{
-	transform: scale(1.05);
+.card{
+	background-color: whitesmoke;
+	color: black;
+	margin: 10px auto;
+	padding: 5px;
 }
+
+.card-image{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.card-text {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.card:hover .card-overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+/* Modal (Popup) */
+
+.modal-content{
+	color: black;
+}
+
+.modal-body ul{
+	columns: 2;
+	-webkit-columns: 2;
+  	-moz-columns: 2;
+}
+
+
+
+
+
 
 
 
