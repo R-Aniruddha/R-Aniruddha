@@ -172,6 +172,18 @@ nav{
     color:var(--main-text-color);
 }
 
+#mail-container{
+
+	background: 
+	
+	url("../images/Icons/mail.png") ;	
+	
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 	.tinted-image-home {
