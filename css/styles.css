@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 700;
 }
 h1{
-	font-size: 2.5rem;
+	font-size: 3rem;
 }
 
 h2{
@@ -34,6 +34,11 @@ p{
   	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 }
 
+.blue-cstm{
+	color: var(--secondary-color);
+}
+
+
 blockquote{
 	font-size: 1.2rem;
 }
@@ -42,6 +47,11 @@ blockquote{
 	color: var(--main-text-color);
 	text-decoration: none;
 }
+
+.a-btn:hover{
+	text-decoration: none;
+}
+
 
 .hero-container{
 	height: 100%;
@@ -233,9 +243,6 @@ nav{
 
  .btn-cstm:hover {
    background: rgba(100, 0, 0, .03);
-   color: var(--main-text-color);
-   
-
 }
  .btn-cstm__horizontal, .btn-cstm__vertical {
 	 position: absolute;
