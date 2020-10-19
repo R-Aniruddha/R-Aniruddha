@@ -87,7 +87,7 @@ blockquote{
 	width: 80%;
 	padding: 1rem 0;
 	margin: auto;
-	columns: 3;
+	columns: 1;
 	column-width: 100%;
 	line-height: 1.5rem;
 }
@@ -178,19 +178,21 @@ nav{
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
-
 	
-	#skills-list{
+	.icons-list{
 		width: 80%;
 		padding: 1rem 0;
 		margin: auto;
-		columns: 5;
+		columns: 3;
 		column-width: 20%;
 		list-style-position: outside;
 		line-height: 2.25rem;
 	}
+	.em_gray {
+		filter: grayscale(1);
+		transition: 1s;
+	}
 
-	
 
  }
 
@@ -199,51 +201,6 @@ nav{
 	 box-shadow: 0 1rem 3rem rgba(0,0,100,1);
  }
 
-
-
-/* Skills Page Cover */ 
-#skills-cover{
-    color:var(--main-text-color);
-}
-
-/* Skills Cover Heading Container 
-#skills-heading-container{
-	width: fit-content;
-	position: relative;
-    top: -60%;
-    margin: auto	
-}
-
-#skills-heading-container p, h1{
-	width: fit-content;
-	background-color: rgb(3 18 39 / 55%);
-}
-*/
-
-
-/* Contact Page Cover */ 
-.tinted-image-contact{
-
-  background: 
-	
-	linear-gradient(
-      rgba(0, 0, 0, 0.9), 
-      rgba(0, 0, 0, 0.6)
-    ),
-
-  	url("https://res.cloudinary.com/ani10/image/upload/v1600609518/Covers/background-map_oy0p8l.jpg");
-
-
-    /* Height 
-    height: 45%;
-*/
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    color:var(--main-text-color);
-}
 
 
 /* Custom Button */
@@ -482,10 +439,7 @@ nav{
   -moz-animation: image_effect 3s infinite;
   -o-animation: image_effect 3s infinite;
 }
-.em_gray {
-  filter: grayscale(1);
-  transition: 1s;
-}
+
 .em_gray:hover {
   filter: grayscale(0);
 }
