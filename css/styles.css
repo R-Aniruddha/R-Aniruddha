@@ -1,14 +1,15 @@
 :root {
   --main-text-color: white;
+  --secondary-color:rgba(0,98,255,1);
   --pyramid-color: rgba(121, 112, 112, 0.61);
-	font-size: 20px;
+	font-size: 18px;
 }
 
 /* 
   --text-color: #4666FF;
   var(--pyramid-color)
 	color: var(--main-text-color);
-	var(--main-text-color)
+	var(--secondary-color)
 */
 
 html, body {
@@ -17,7 +18,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h6{
     font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
+    font-weight: 700;
 }
 h1{
 	font-size: 2.5rem;
@@ -30,7 +31,7 @@ h2{
 
 p{ 
 	line-height: 1.6;
-  	font-family: "Lucida Console", Courier, monospace;
+  	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 }
 
 blockquote{
@@ -42,9 +43,17 @@ blockquote{
 	text-decoration: none;
 }
 
+.hero-container{
+	height: 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
 /* Container for main content */
 .main-content{
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(14 19 58);
   color: seashell;
   padding: 80px 100px;
 }
@@ -70,16 +79,17 @@ blockquote{
 }
 
 .lead{
-	margin: auto;
+	margin: 0;
+	width:75%;
 }
 
-#skills-list{
+.icons-list{
 	width: 80%;
 	padding: 1rem 0;
 	margin: auto;
-	columns: 1;
+	columns: 3;
 	column-width: 100%;
-	line-height: 1.25rem;
+	line-height: 1.5rem;
 }
 
 nav{
@@ -185,6 +195,11 @@ nav{
  }
 
 
+ .img-rounded{
+	 box-shadow: 0 1rem 3rem rgba(0,0,100,1);
+ }
+
+
 
 /* Skills Page Cover */ 
 #skills-cover{
@@ -239,13 +254,13 @@ nav{
 	 margin: 30px 0 0 10px;
 	 display: block;
 	 position: relative;
-	 padding: 1rem 1.5rem;
+	 padding: 0.7rem 1rem;
 	 appearance: none;
 	 border: 0;
 	 background: transparent;
    	 color: var(--main-text-color);
 	 text-transform: uppercase;
-	 letter-spacing: 0.25em;
+	 letter-spacing: 0.2em;
 	 outline: none;
 	 cursor: pointer;
 	 font-weight: bold;
@@ -358,6 +373,7 @@ nav{
 }
 
 .card{
+	width: 100%;
 	background-color: whitesmoke;
 	color: black;
 	margin: 10px auto;
@@ -376,7 +392,7 @@ nav{
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #008CBA;
+  background-color: #ffffff;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -388,7 +404,7 @@ nav{
 }
 
 .card-text {
-  color: white;
+  color: var(--secondary-color);
   font-size: 18px;
   position: absolute;
   top: 50%;
@@ -397,6 +413,11 @@ nav{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.btn-outline-cstm{
+	color:black;
+	border-color: var(--secondary-color);
 }
 
 
@@ -409,6 +430,10 @@ nav{
 
 .modal-content{
 	color: black;
+}
+
+.modal-title{
+	color: var(--secondary-color);
 }
 
 .modal-body ul{
