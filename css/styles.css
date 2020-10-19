@@ -38,7 +38,7 @@ blockquote{
 	font-size: 1.2rem;
 }
 
-.btn a{
+.a-btn{
 	color: var(--main-text-color);
 	text-decoration: none;
 }
@@ -84,12 +84,13 @@ blockquote{
 }
 
 .icons-list{
-	width: 80%;
+	width: 75%;
 	padding: 1rem 0;
 	margin: auto;
-	columns: 1;
-	column-width: 100%;
-	line-height: 1.5rem;
+	columns: 2;
+	column-width: auto;
+	list-style: none;
+	line-height: 2.25rem;
 }
 
 nav{
@@ -180,12 +181,12 @@ nav{
 	}
 	
 	.icons-list{
-		width: 80%;
+		width: 75%;
 		padding: 1rem 0;
 		margin: auto;
 		columns: 3;
-		column-width: 20%;
-		list-style-position: outside;
+		column-width: auto;
+		list-style: none;
 		line-height: 2.25rem;
 	}
 	.em_gray {
@@ -417,7 +418,7 @@ nav{
 	margin: 10px 0;
 	width: 100%;
 	font-family: "Lucida Console", Courier, monospace;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
 /* Image with Shadow */
