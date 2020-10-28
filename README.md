@@ -7,6 +7,7 @@
 - Geometric Background (https://codepen.io/smangang/pen/EXmOaB)
 - Floating Image (https://codepen.io/Harsh29/pen/EGQxYP?editors=1100)
 - Button Animation (https://codepen.io/electerious/details/qPjbGm/)
+- Footer Icon Animations (https://codepen.io/ishaansaxena/pen/WoJGRK?editors=1100)
 
 #Photo Credits:
 
