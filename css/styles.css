@@ -1,5 +1,5 @@
 :root {
-  --main-text-color: white;
+  --main-text-color: rgb(236, 236, 236);
   --secondary-color:rgba(0,98,255,1);
   --pyramid-color: rgba(121, 112, 112, 0.61);
 	font-size: 18px;
