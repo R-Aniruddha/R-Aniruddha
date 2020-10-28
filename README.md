@@ -1,14 +1,18 @@
 ### Hi there 👋 This is my portfolio website that I'm currently working on
 
-##I'm using Bootstrap to build it
+##Built from scratch using Bootstrap
 
-
-#Photo Credits:
 
 #Animation Credits:
 - Geometric Background (https://codepen.io/smangang/pen/EXmOaB)
 - Floating Image (https://codepen.io/Harsh29/pen/EGQxYP?editors=1100)
+- Button Animation (https://codepen.io/electerious/details/qPjbGm/)
 
+#Photo Credits:
+
+- Rohit on Unsplash (https://unsplash.com/@romiem)
+- Pixabay on Pexels (https://www.pexels.com/@pixabay)
+- Bongkarn Thanyakij(https://www.pexels.com/@bongkarn-thanyakij-683719)
 
 <!--
 **R-Aniruddha/R-Aniruddha** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
