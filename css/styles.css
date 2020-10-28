@@ -5,7 +5,10 @@
 	font-size: 18px;
 }
 
+
 /* 
+  secondary color hex: #0062FF
+
   --text-color: #4666FF;
   var(--pyramid-color)
 	color: var(--main-text-color);
@@ -38,6 +41,11 @@ p{
 	color: var(--secondary-color);
 }
 
+.blue-cstm-link{
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
 
 blockquote{
 	font-size: 1.2rem;
@@ -65,7 +73,7 @@ blockquote{
 .main-content{
   background-color: rgb(14 19 58);
   color: seashell;
-  padding: 80px 100px;
+  padding: 20px 30px;
 }
 
 .center-content{
@@ -140,14 +148,14 @@ nav{
   background: 
     /* top to bottom gradient */ 
     linear-gradient(
-      rgba(0, 0, 0, 0.9), 
-      rgba(0, 0, 0, 0.3)
-	),
-    /* image */
+      var(--secondary-color), 
+      rgba(14, 19, 58, 1)
+	);
+    /* image 
 	url("https://res.cloudinary.com/ani10/image/upload/v1601222120/Profile/potrait_tyyima.jpg") ;	
 	
 	min-height: fit-content;
-
+  */
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -156,21 +164,6 @@ nav{
     color:var(--main-text-color);
 }
 
-/* About Page Cover */ 
-.tinted-image-about {
-  background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.9), 
-      rgba(0, 0, 0, 0.6)
-    );
-
-
-    /* Height 
-    height: 50%;
-	*/
-
-    color:var(--main-text-color);
-}
 
 #mail-container{
 
@@ -184,8 +177,19 @@ nav{
     background-size: contain;
 }
 
-/* Medium devices (tablets, 768px and up) */
+/* 
+  Medium devices (tablets, 768px and up) 
+  Styling for large devices
+*/
 @media (min-width: 768px) { 
+
+  .main-content{
+    background-color: rgb(14 19 58);
+    color: seashell;
+    padding: 80px 100px;
+  }
+
+
 	.tinted-image-home {
 	  	background: 
 		linear-gradient(
@@ -193,7 +197,6 @@ nav{
 		rgba(0, 0, 0, 0.3)
 		), 
 		url("https://res.cloudinary.com/ani10/image/upload/v1599831556/Covers/cover_o6hidm.jpg");
-
 
 		height: 100%;
 
@@ -214,7 +217,8 @@ nav{
 	.em_gray {
 		filter: grayscale(1);
 		transition: 1s;
-	}
+  }
+  
 
 
  }
@@ -341,83 +345,12 @@ nav{
           transform: translateX(-50%) scaleX(1);
 }
 
-/* Portfolio Cards */
-
-.card-container{
-	padding: 0.7rem 1rem;
-	position: relative;
-
-}
-
-.card{
-	width: 100%;
-	background-color: whitesmoke;
-	color: black;
-	margin: 10px auto;
-	padding: 5px;
-}
-
-.card-image{
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: auto;
-}
-
-.card-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #ffffff;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-}
-
-.card-text {
-  color: var(--secondary-color);
-  font-size: 18px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 .btn-outline-cstm{
 	color:black;
 	border-color: var(--secondary-color);
 }
 
 
-.card:hover .card-overlay {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-/* Modal (Popup) */
-
-.modal-content{
-	color: black;
-}
-
-.modal-title{
-	color: var(--secondary-color);
-}
-
-.modal-body ul{
-	columns: 2;
-	-webkit-columns: 2;
-  	-moz-columns: 2;
-}
 
 
 
@@ -434,10 +367,14 @@ nav{
 
 #contact-form input, textarea{
 	padding: 5px;
-	margin: 10px 0;
-	width: 100%;
-	font-family: "Lucida Console", Courier, monospace;
-	border-radius: 5px;
+	margin: 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--secondary-color);
+  background-color: rgba(17, 17, 19, 0.5);
+  font-family: "Lucida Console", Courier, monospace;
+  color:var(--main-text-color);
+	/*border-radius: 5px; */
 }
 
 
@@ -573,3 +510,110 @@ nav{
   }
 }
 
+/* Footer Icons Animation */
+
+.icon-container {
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+}
+
+.icon {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.icon::before, .icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  border-radius: 25px;
+}
+.icon i {
+  position: relative;
+  color: #FFFFFF;
+  font-size: 25px;
+  margin-top: 12.5px;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.icon-fill::before {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  box-shadow: inset 0 0 0 1px #0062FF;
+}
+.icon-fill:hover::before {
+  box-shadow: inset 0 0 0 50px #0062FF;
+}
+
+.icon-enter::after {
+  box-shadow: inset 0 0 0 1px #0062FF;
+}
+.icon-enter::before {
+  border-radius: 0;
+  margin-left: -100%;
+  box-shadow: inset 0 0 0 50px #0062FF;
+}
+.icon-enter:hover::before {
+  margin-left: 0;
+}
+
+.icon-expand::after {
+  box-shadow: inset 0 0 0 1px #0062FF;
+}
+.icon-expand::before {
+  background: #0062FF;
+  box-shadow: inset 0 0 0 50px #2d2c3e;
+}
+.icon-expand:hover::before {
+  box-shadow: inset 0 0 0 1px #2d2c3e;
+}
+
+.icon-collapse::before {
+  border-radius: 0;
+}
+.icon-collapse:hover::before {
+  box-shadow: inset 0 25px 0 0 #0062FF, inset 0 -25px 0 0 #0062FF;
+}
+.icon-collapse::after {
+  box-shadow: inset 0 0 0 1px #0062FF;
+}
+
+.icon-rotate {
+  box-shadow: inset 0 0 0 1px #0062FF;
+}
+.icon-rotate::after, .icon-rotate::before {
+  border: 0px solid transparent;
+}
+.icon-rotate:hover::before {
+  -webkit-transition: border-top-width 0.3s ease, border-top-color 0.3s ease;
+  transition: border-top-width 0.3s ease, border-top-color 0.3s ease;
+  border-width: 50px;
+  border-top-color: #0062FF;
+}
+.icon-rotate:hover::after {
+  -webkit-transition: border-left-width 0.3s ease, border-left-color 0.3s ease;
+  transition: border-left-width 0.3s ease, border-left-color 0.3s ease;
+  border-width: 50px;
+  border-left-color: #0062FF;
+}
+.icon-rotate:hover {
+  -webkit-transition: background 0.001s ease 0.3s;
+  transition: background 0.001s ease 0.3s;
+  background: #0062FF;
+}
+.icon-rotate i {
+  z-index: 1;
+}
