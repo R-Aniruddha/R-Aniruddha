@@ -1,6 +1,17 @@
 :root {
-  --main-text-color: rgb(236, 236, 236);
-  --secondary-color:rgba(0,98,255,1);
+  --main-text-color: #D5D7F2;
+  --background-color: #0D0D0D;
+  --secondary-color: #007bff;
+  --tertiary-color:  rgba(17, 17, 19, 0.5);
+  /*
+    --main-text-color: rgb(236, 236, 236);
+    --background-color:  rgb(14 19 58); #0e133a;
+
+
+    bright color (default link color:  #007bff;
+    suggested color: rgba(0,98,255,1);
+
+  */
   --pyramid-color: rgba(121, 112, 112, 0.61);
 	font-size: 18px;
 }
@@ -10,8 +21,8 @@
   secondary color hex: #0062FF
 
   --text-color: #4666FF;
-  var(--pyramid-color)
-	color: var(--main-text-color);
+  var(--background-color)
+	var(--main-text-color)
 	var(--secondary-color)
 */
 
@@ -37,6 +48,10 @@ p{
   	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 }
 
+a{
+  color: var(--secondary-color);
+}
+
 .blue-cstm{
 	color: var(--secondary-color);
 }
@@ -56,6 +71,11 @@ blockquote{
 	text-decoration: none;
 }
 
+.btn-primary{
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
 .a-btn:hover{
 	text-decoration: none;
 }
@@ -71,8 +91,8 @@ blockquote{
 
 /* Container for main content */
 .main-content{
-  background-color: rgb(14 19 58);
-  color: seashell;
+  background-color: var(--background-color);
+  color: var(--main-text-color);
   padding: 20px 30px;
 }
 
@@ -139,7 +159,7 @@ nav{
 	border: 0.1rem solid #698c9d;
  }
  .list-group-item.active{
-	 background-color: darkblue;
+	 background-color: var(--background-color);
  }
 
 
@@ -184,8 +204,8 @@ nav{
 @media (min-width: 768px) { 
 
   .main-content{
-    background-color: rgb(14 19 58);
-    color: seashell;
+    background-color: var(--background-color);
+    color: var(--main-text-color);
     padding: 80px 100px;
   }
 
@@ -225,7 +245,7 @@ nav{
 
 
  .img-rounded{
-	 box-shadow: 0 1rem 3rem rgba(0,0,100,1);
+	 box-shadow: 0 1rem 3rem var(--secondary-color);
  }
 
 
@@ -371,7 +391,7 @@ nav{
   width: 100%;
   border: none;
   border-bottom: 1px solid var(--secondary-color);
-  background-color: rgba(17, 17, 19, 0.5);
+  background-color: var(--tertiary-color);
   font-family: "Lucida Console", Courier, monospace;
   color:var(--main-text-color);
 	/*border-radius: 5px; */
@@ -542,7 +562,7 @@ nav{
 }
 .icon i {
   position: relative;
-  color: #FFFFFF;
+  color: var(--main-text-color);
   font-size: 25px;
   margin-top: 12.5px;
   -webkit-transition: all 0.25s ease;
@@ -552,29 +572,29 @@ nav{
 .icon-fill::before {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  box-shadow: inset 0 0 0 1px #0062FF;
+  box-shadow: inset 0 0 0 1px var(--secondary-color);
 }
 .icon-fill:hover::before {
-  box-shadow: inset 0 0 0 50px #0062FF;
+  box-shadow: inset 0 0 0 50px var(--secondary-color);
 }
 
 .icon-enter::after {
-  box-shadow: inset 0 0 0 1px #0062FF;
+  box-shadow: inset 0 0 0 1px var(--secondary-color);
 }
 .icon-enter::before {
   border-radius: 0;
   margin-left: -100%;
-  box-shadow: inset 0 0 0 50px #0062FF;
+  box-shadow: inset 0 0 0 50px var(--secondary-color);
 }
 .icon-enter:hover::before {
   margin-left: 0;
 }
 
 .icon-expand::after {
-  box-shadow: inset 0 0 0 1px #0062FF;
+  box-shadow: inset 0 0 0 1px var(--secondary-color);
 }
 .icon-expand::before {
-  background: #0062FF;
+  background: var(--secondary-color);
   box-shadow: inset 0 0 0 50px #2d2c3e;
 }
 .icon-expand:hover::before {
@@ -585,14 +605,14 @@ nav{
   border-radius: 0;
 }
 .icon-collapse:hover::before {
-  box-shadow: inset 0 25px 0 0 #0062FF, inset 0 -25px 0 0 #0062FF;
+  box-shadow: inset 0 25px 0 0 var(--secondary-color), inset 0 -25px 0 0 var(--secondary-color);
 }
 .icon-collapse::after {
-  box-shadow: inset 0 0 0 1px #0062FF;
+  box-shadow: inset 0 0 0 1px var(--secondary-color);
 }
 
 .icon-rotate {
-  box-shadow: inset 0 0 0 1px #0062FF;
+  box-shadow: inset 0 0 0 1px var(--secondary-color);
 }
 .icon-rotate::after, .icon-rotate::before {
   border: 0px solid transparent;
@@ -601,18 +621,18 @@ nav{
   -webkit-transition: border-top-width 0.3s ease, border-top-color 0.3s ease;
   transition: border-top-width 0.3s ease, border-top-color 0.3s ease;
   border-width: 50px;
-  border-top-color: #0062FF;
+  border-top-color: var(--secondary-color);
 }
 .icon-rotate:hover::after {
   -webkit-transition: border-left-width 0.3s ease, border-left-color 0.3s ease;
   transition: border-left-width 0.3s ease, border-left-color 0.3s ease;
   border-width: 50px;
-  border-left-color: #0062FF;
+  border-left-color: var(--secondary-color);
 }
 .icon-rotate:hover {
   -webkit-transition: background 0.001s ease 0.3s;
   transition: background 0.001s ease 0.3s;
-  background: #0062FF;
+  background: var(--secondary-color);
 }
 .icon-rotate i {
   z-index: 1;
