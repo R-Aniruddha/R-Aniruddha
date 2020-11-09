@@ -6,6 +6,32 @@ $(window).on("resize", function () {
 });
 
 
+$('a[data-toggle="centredart"]').tooltip({
+    animated: 'fade',
+    placement: 'bottom',
+    html: true
+});
+
+$('a[data-toggle="solarvillage"]').tooltip({
+    animated: 'fade',
+    placement: 'bottom',
+    html: true
+});
+
+$('a[data-toggle="agp"]').tooltip({
+    animated: 'fade',
+    placement: 'bottom',
+    html: true
+});
+
+$('a[data-toggle="avportal"]').tooltip({
+    animated: 'fade',
+    placement: 'bottom',
+    html: true
+});
+
+
+
 /* Skills Cover Animation */
 
 $('#skills-cover').Geometryangle({
