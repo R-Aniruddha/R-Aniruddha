@@ -51,6 +51,9 @@ p{
 a{
   color: var(--secondary-color);
 }
+a:hover{
+  color: var(--secondary-color);
+}
 
 .blue-cstm{
 	color: var(--secondary-color);
@@ -59,6 +62,16 @@ a{
 .blue-cstm-link{
   color: var(--secondary-color);
   text-decoration: underline;
+}
+
+/* Override bootstrap style*/
+.btn-outline-info {
+  color: var(--secondary-color);
+  border-color:var(--secondary-color);
+}
+
+.btn-outline-info:hover {
+  background-color: var(--tertiary-color);
 }
 
 
@@ -78,6 +91,11 @@ blockquote{
 
 .a-btn:hover{
 	text-decoration: none;
+}
+
+.cstm-list{
+    list-style-type: circle;
+    line-height: 1.7rem;
 }
 
 
@@ -118,7 +136,8 @@ blockquote{
 
 .lead{
 	margin: 0;
-	width:75%;
+  width:75%;
+  font-weight: 530;
 }
 
 .icons-list{
