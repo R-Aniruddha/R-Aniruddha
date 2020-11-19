@@ -29,6 +29,9 @@
 html, body {
   height: 100%;
 }
+body{
+  position: relative;
+}
 
 h1, h2, h3, h4, h5, h6{
     font-family: "Times New Roman", Times, serif;
@@ -150,6 +153,14 @@ blockquote{
 	line-height: 2.25rem;
 }
 
+#nav-bar{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#nav-bar:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 nav{
 	text-align: center;
 }
@@ -225,7 +236,7 @@ nav{
   .main-content{
     background-color: var(--background-color);
     color: var(--main-text-color);
-    padding: 80px 100px;
+    padding: 10px 100px 50px 100px;
   }
 
 
@@ -367,7 +378,7 @@ nav{
           transform-origin: 50% 50%;
   width: 100%;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--secondary-color);
   -webkit-transition: -webkit-transform 250ms;
   transition: -webkit-transform 250ms;
   transition: transform 250ms;
@@ -375,8 +386,7 @@ nav{
 }
 
 .nav-link:hover{
-  color:gray; 
-  /*color:var(--text-color); */
+  color:var(--secondary-color) !important;
 }
 
 .nav-link:hover::after {
