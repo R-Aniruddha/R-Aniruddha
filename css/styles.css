@@ -6,13 +6,10 @@
   /*
     --main-text-color: rgb(236, 236, 236);
     --background-color:  rgb(14 19 58); #0e133a;
-
-
     bright color (default link color:  #007bff;
     suggested color: rgba(0,98,255,1);
 
   */
-  --pyramid-color: rgba(121, 112, 112, 0.61);
 	font-size: 18px;
 }
 
@@ -114,7 +111,7 @@ blockquote{
 .main-content{
   background-color: var(--background-color);
   color: var(--main-text-color);
-  padding: 20px 30px;
+  padding: 1rem 1.6rem;
 }
 
 .center-content{
@@ -141,6 +138,11 @@ blockquote{
 	margin: 0;
   width:75%;
   font-weight: 530;
+}
+
+/* Prevent flickering of tooltips */
+.tooltip {
+  pointer-events: none;
 }
 
 .icons-list{
@@ -171,12 +173,12 @@ nav{
 
 .navbar-toggler{
 	background-color: rgb(255 255 255 / 17%);
-    margin: 20px 20px 0 0;
+    margin: 1rem 1rem 0 0;
 }
 
 @media (min-width: 576px) { 
 	.navbar-toggler{
-    margin: 20px 50px 0 0;
+    margin: 1rem 2.5rem 0 0;
 	}
 }
 
@@ -236,7 +238,7 @@ nav{
   .main-content{
     background-color: var(--background-color);
     color: var(--main-text-color);
-    padding: 10px 100px 50px 100px;
+    padding: 0.5rem 5rem 2.5rem 5rem;
   }
 
 
@@ -283,9 +285,9 @@ nav{
 /* Custom Button */
 
 .btn-cstm {
-	 --offset: 10px;
+	 --offset: 0.5rem;
 	 --border-size: 2px;
-	 margin: 30px 0 0 10px;
+	 margin: 1.5rem 0 0 0.5rem;
 	 display: block;
 	 position: relative;
 	 padding: 0.7rem 1rem;
@@ -564,7 +566,7 @@ nav{
 .icon-container {
   margin-top: 30px;
   width: 100%;
-  height: 50px;
+  height: 2.5rem;
 }
 
 .icon {
@@ -573,9 +575,9 @@ nav{
   display: inline-block;
   width: 50px;
   height: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 25px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 1.5rem;
   overflow: hidden;
 }
 .icon::before, .icon::after {

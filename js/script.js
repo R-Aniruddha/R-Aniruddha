@@ -7,26 +7,38 @@ $(window).on("resize", function () {
 
 
 $('a[data-toggle="centredart"]').tooltip({
-    animated: 'fade',
-    placement: 'bottom',
+    animation: true,
+    placement: 'auto',
     html: true
 });
 
 $('a[data-toggle="solarvillage"]').tooltip({
-    animated: 'fade',
-    placement: 'bottom',
+    animation: true,
+    placement: 'left',
     html: true
 });
 
 $('a[data-toggle="agp"]').tooltip({
-    animated: 'fade',
-    placement: 'bottom',
+    animation: true,
+    placement: 'auto',
     html: true
 });
 
 $('a[data-toggle="avportal"]').tooltip({
-    animated: 'fade',
-    placement: 'bottom',
+    animation: true,
+    placement: 'auto',
+    html: true
+});
+
+$('a[data-toggle="octostudio"]').tooltip({
+    animation: true,
+    placement: 'auto',
+    html: true
+});
+
+$('a[data-toggle="avc"]').tooltip({
+    animation: true,
+    placement: 'auto',
     html: true
 });
 
