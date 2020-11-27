@@ -13,6 +13,14 @@
 	font-size: 18px;
 }
 
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  :root{
+    font-size: 14px;
+  }
+ }
+
+
 
 /* 
   secondary color hex: #0062FF
@@ -160,7 +168,7 @@ blockquote{
 }
 
 #nav-bar:hover{
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 nav{
@@ -259,6 +267,7 @@ nav{
 	}
 	
 	.icons-list{
+    font-size: 1.1rem;
 		width: 75%;
 		padding: 1rem 0;
 		margin: auto;
@@ -397,6 +406,10 @@ nav{
 .nav-link:hover::after {
   -webkit-transform: translateX(-50%) scaleX(1);
           transform: translateX(-50%) scaleX(1);
+}
+
+.active{
+    color:var(--secondary-color) !important;
 }
 
 .btn-outline-cstm{
