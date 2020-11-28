@@ -203,7 +203,7 @@ nav{
  }
 
 
-/* Background Cover Image */
+/* Background Gradient in smaller screens */
 .tinted-image-home {
   background: 
     /* top to bottom gradient */ 
@@ -212,12 +212,7 @@ nav{
       var(--background-color)
       
 	);
-    /* image 
-	url("https://res.cloudinary.com/ani10/image/upload/v1601222120/Profile/potrait_tyyima.jpg") ;	
-	
-	min-height: fit-content;
-  */
-    /* Center and scale the image nicely */
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
