@@ -21,16 +21,6 @@
  }
 
 
-
-/* 
-  secondary color hex: #0062FF
-
-  --text-color: #4666FF;
-  var(--background-color)
-	var(--main-text-color)
-	var(--secondary-color)
-*/
-
 html, body {
   height: 100%;
 }
@@ -220,18 +210,6 @@ nav{
     color:var(--main-text-color);
 }
 
-
-#mail-container{
-
-	background: 
-	
-	url("../images/Icons/mail.png") ;	
-	
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 
 /* 
   Medium devices (tablets, 768px and up) 
