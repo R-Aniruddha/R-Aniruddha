@@ -1,394 +1,643 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta name="description" content="" />
+		<meta name="author" content="Aniruddha" />
+		<title>Aniruddha's Portfolio</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="Aniruddha">
-  <title>Aniruddha's Portfolio</title>
+		<!-- Bootstrap core CSS -->
+		<link
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
 
+		<!-- Custom styles  -->
+		<link href="css/styles.css" rel="stylesheet" />
 
-  <!-- Bootstrap core CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font Awesome  -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+			integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q"
+			crossorigin="anonymous"
+		/>
+		<!-- Google Fonts  -->
 
-  <!-- Custom styles  -->
-  <link href="css/styles.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-  <!-- Font Awesome  -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
-    integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+	<body data-spy="scroll" data-target="#nav-bar">
+		<div id="home" class="tinted-image-home jumbotron jumbotron-fluid">
+			<nav
+				id="nav-bar"
+				class="navbar fixed-top navbar-expand-lg navbar-dark pb-3"
+			>
+				<a class="navbar-brand" href="#"></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#collapsibleNavbar"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav m-auto">
+						<li class="nav-item">
+							<a class="nav-link active" href="https://r-aniruddha.github.io/"
+								>Home</a
+							>
+						</li>
 
-</head>
+						<li class="nav-item">
+							<a class="nav-link" href="#portfolio">Portfolio</a>
+						</li>
 
-<body data-spy="scroll" data-target="#nav-bar">
+						<li class="nav-item">
+							<a class="nav-link" href="#skills">Skills</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#experience">Experience</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 
-  <div id="home" class="tinted-image-home jumbotron jumbotron-fluid">
+			<div class="hero-container">
+				<div class="offset-md-6 offset-sm-2 pl-3">
+					<div class="display-4">
+						<h5>Hello, I'm <span class="blue-cstm">Aniruddha</span>,</h5>
+						<h2>Full-Stack Developer</h2>
+						<h5>Looking for an internship as a Developer/Software Engineer</h5>
+					</div>
+					<a class="a-btn" href="#portfolio">
+						<button class="btn-cstm">
+							My Work
+							<div class="btn-cstm__horizontal"></div>
+							<div class="btn-cstm__vertical"></div>
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid main-content">
+			<h1 id="portfolio" class="text-center mt-1 pt-5 pb-2">Portfolio</h1>
 
-    <nav id="nav-bar" class="navbar fixed-top navbar-expand-lg navbar-dark pb-3">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav m-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="https://r-aniruddha.github.io/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-    
-        </ul>
-      </div>
-    </nav>
+			<div class="row card-container">
+				<div
+					id="card-1"
+					class="col-lg-5 col-sm-9 card rounded"
+					data-toggle="modal"
+					data-target="#pseutopy"
+				></div>
 
-    <div class="hero-container">
-      <div class="offset-md-6 offset-sm-2 pl-3">
-        <div class="display-4">
-          <h4>Hello, I'm </h4>
-          <h1>Aniruddha</h1>
-        </div>
-        <p class="lead">An aspiring full-stack developer in search of an internship and other learning opportunities</p>
-        <!-- in search of learning opportunities -->
-        <a class="a-btn" href="#contact">
-          <button class="btn-cstm">
-            Get In Touch
-            <div class="btn-cstm__horizontal"></div>
-            <div class="btn-cstm__vertical"></div>
-          </button>
-        </a>
-      </div>
-    </div>
+				<div
+					class="modal fade"
+					id="pseutopy"
+					tabindex="-1"
+					role="dialog"
+					aria-labelledby="exampleModalCenterTitle"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">
+									PseuToPy<br />
+									Generate Python code from Pseudocode
+								</h5>
+								<button
+									type="button"
+									class="close"
+									data-dismiss="modal"
+									aria-label="Close"
+								>
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>
+									Ongoing Research Project to create a tool to help learn
+									Python.<br />
+									Working on the execution of Python code on the website
+									client-side.
+								</p>
+								<h6>Technologies Used</h6>
+								<ul>
+									<li>Python - Flask</li>
+									<li>HTML & CSS</li>
+									<li>JavaScript</li>
+									<li>JQuery</li>
+									<li>
+										<a class="blue-cstm-link" href="https://skulpt.org/"
+											>Skulpt</a
+										>
+									</li>
+									<li>
+										<a class="blue-cstm-link" href="https://ace.c9.io/">Ace</a>
+									</li>
+									<li>PostgreSQL</li>
+								</ul>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-outline-info">
+									<a href="http://www.pseutopy.com/en/home" target="_blank">
+										Website
+									</a>
+								</button>
+								<a
+									href="https://github.com/PseuToPy/PseuToPy-web"
+									target="_blank"
+								>
+									<i class="fab fa-github fa-2x ml-2"></i>
+								</a>
+								<button
+									type="button"
+									class="btn btn-secondary"
+									data-dismiss="modal"
+								>
+									Close
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<div
+					id="card-2"
+					class="col-lg-5 col-sm-9 card rounded"
+					data-toggle="modal"
+					data-target="#icare"
+				></div>
+				<div
+					class="modal fade"
+					id="icare"
+					tabindex="-1"
+					role="dialog"
+					aria-labelledby="exampleModalCenterTitle"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Smart Healthcare System Platform</h5>
+								<button
+									type="button"
+									class="close"
+									data-dismiss="modal"
+									aria-label="Close"
+								>
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>
+									University Group Project to create a website that will display
+									'fake' data provided by sensors, offers registration,
+									sessions, & login features as well as communication between
+									the different types of users.
+								</p>
+								<h6>Technologies Used</h6>
+								<ul>
+									<li>HTML, CSS & JS</li>
+									<li>PHP</li>
+									<li>MySQL</li>
+									<li>Bootstrap</li>
+									<li>JQuery</li>
+								</ul>
+							</div>
+							<div class="modal-footer">
+								<a href="https://github.com/IcareTech-isep/Website">
+									<i class="fab fa-github fa-2x ml-2"></i>
+								</a>
+								<button
+									type="button"
+									class="btn btn-secondary"
+									data-dismiss="modal"
+								>
+									Close
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
 
-  </div>
+				<div
+					id="card-3"
+					class="col-lg-5 col-sm-9 card rounded"
+					data-toggle="modal"
+					data-target="#covid"
+				>
+					<div class="card-heading"></div>
+				</div>
+				<div
+					class="modal fade"
+					id="covid"
+					tabindex="-1"
+					role="dialog"
+					aria-labelledby="exampleModalCenterTitle"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Coronavirus Statistics Website</h5>
+								<button
+									type="button"
+									class="close"
+									data-dismiss="modal"
+									aria-label="Close"
+								>
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>
+									University Group Project to create a web application based on
+									a Java framework. <br />
+									Retrieval of Coronavirus raw data(statistics) from APIs and
+									then displayed in the application.
+								</p>
+								<h6>Technologies Used</h6>
+								<ul>
+									<li>Spring Boot - Java</li>
+									<li>HTML, CSS & JS</li>
+									<li>REST APIs</li>
+									<li>JSON</li>
+									<li>Bootstrap</li>
+									<li>JQuery</li>
+								</ul>
+							</div>
+							<div class="modal-footer">
+								<a href="https://github.com/R-Aniruddha/CoronaStatistics">
+									<i class="fab fa-github fa-2x ml-2"></i>
+								</a>
+								<button
+									type="button"
+									class="btn btn-secondary"
+									data-dismiss="modal"
+								>
+									Close
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<div
+					id="card-4"
+					class="col-lg-5 col-sm-9 card rounded"
+					data-toggle="modal"
+					data-target="#avcModal"
+				></div>
+				<div
+					class="modal fade"
+					id="avcModal"
+					tabindex="-1"
+					role="dialog"
+					aria-labelledby="exampleModalCenterTitle"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Auroville Consulting Website Portal</h5>
+								<button
+									type="button"
+									class="close"
+									data-dismiss="modal"
+									aria-label="Close"
+								>
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>
+									A website portal to all of AVC and their affiliate partners'
+									websites. A mini project to rebuild an existing website with
+									Angular and experiment with the framework.
+								</p>
+								<h6>Technologies Used</h6>
+								<ul>
+									<li>Angular</li>
+									<li>HTML & SCSS</li>
+									<li>TypeScript</li>
+									<li>JSON</li>
+									<li>NPM</li>
+									<li>Material Design Theme</li>
+								</ul>
+							</div>
+							<div class="modal-footer">
+								<a href="#">
+									<i class="fab fa-github fa-2x ml-2"></i>
+								</a>
+								<button
+									type="button"
+									class="btn btn-secondary"
+									data-dismiss="modal"
+								>
+									Close
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-  <div class="container-fluid main-content">
-  
-    <h1 id="about" class="text-center py-5">About Me</h1>
-    <div class="row my-2 center-content">
+			<!-- Portfolio Tooltips -->
+			<i
+				id="card-1-tooltip"
+				class="card-tooltip"
+				data-toggle="tooltip"
+				data-placement="right"
+				data-html="true"
+				title="<b>PseuToPy</b><br><em>Python & JavaScript<em>"
+				data-animation="false"
+				data-trigger="manual"
+			></i>
+			<i
+				id="card-2-tooltip"
+				class="card-tooltip"
+				data-toggle="tooltip"
+				data-placement="right"
+				data-html="true"
+				title="<b>Smart Healthcare System</b><br><em>PHP<em>"
+				data-animation="false"
+				data-trigger="manual"
+			></i>
+			<i
+				id="card-3-tooltip"
+				class="card-tooltip"
+				data-toggle="tooltip"
+				data-placement="right"
+				data-html="true"
+				title="<b>Covid-19 Statistics</b><br><em>Spring Boot - Java <em>"
+				data-animation="false"
+				data-trigger="manual"
+			></i>
+			<i
+				id="card-4-tooltip"
+				class="card-tooltip"
+				data-toggle="tooltip"
+				data-placement="right"
+				data-html="true"
+				title="<b>AVC Portal</b><br><em>Angular<em>"
+				data-animation="false"
+				data-trigger="manual"
+			></i>
 
-      <div class="col-lg-6 col-sm-12 pb-2 center-content">
-        <img class="em_gray img-rounded"
-          src="https://res.cloudinary.com/ani10/image/upload/v1604929188/Portfolio%20Photos/IMG_20200628_160607_Bokeh_mtviqf.jpg" width="400px"
-          style="display:block;">
-      </div>
+			<h1 id="skills" class="text-center my-1 py-5">Skills</h1>
 
-      <div class="col-lg-6 col-sm-12 pt-2">
-        <p>
-          Hello, you can call me <span class="blue-cstm">Ani</span>.<br>
-          I'm pursuing a Masters in Software Engineering Student at <a class="blue-cstm-link" href="https://www.isep.fr/">ISEP</a>, Paris.<br>
-          I grew up in the international city of <a class="blue-cstm-link" href="https://www.auroville.org/">Auroville</a>, situated in the South of India.<br><br>
-          I started my journey in IT by attempting to build a website for my high-school and ever since Web Development has become my passion. <br>
-          I enjoy learning new technologies, discovering new ways to create on the web, finding different approaches to showcase ideas and bring them into existence. <br><br>
-          My hobbies include playing basketball, following the NBA, gaming, reading novels and travelling.
-        </p>
-      </div>
-    </div>
+			<div class="row text-center mb-5">
+				<ul class="icons-list">
+					<li><i class="fab fa-html5"> </i> HTML</li>
+					<li><i class="fab fa-css3-alt"> </i> CSS</li>
+					<li><i class="fab fa-sass"></i> Sass/SCSS</li>
+					<li><i class="fab fa-js-square"> </i> JavaScript</li>
+					<li><i class="fab fa-bootstrap"> </i> Bootstrap</li>
+					<li><i class="fab fa-react"> React</i></li>
 
-    <h1 id="experience" class="text-center my-1 py-5">Professional Experience</h1>
-
-    <div class="row py-2">
-    
-      <div class="col-lg-5 col-sm-12 mx-auto">
-        <h3>Freelance - Web Developer <br>
-          @ <a href="https://octostudio.fr/" data-toggle="octostudio" target="_blank"
-          title="<img src='https://res.cloudinary.com/ani10/image/upload/v1605867309/Portfolio%20Photos/OctoStudio_Logo_o3ph9n.jpg'/>">
-            Octo Studio
-          </a>
-        </h3>
-        <h5>September 2020 - Present</h5>
-        <br>
-        <p>Working as a freelancer on the following projects</p>
-        <ul class="cstm-list">
-          <li>
-            Beautify The World (Crowdfunding Platform)
-            <br><i>In Progress</i><br>
-            Optimizing mobile version of the website (Laravel)
-          </li>
-          <li>
-            <a href="https://centredart.in/workshops" data-toggle="centredart" class="blue-cstm-link" target="_blank"
-            title="<img src='https://res.cloudinary.com/ani10/image/upload/v1604937657/Portfolio%20Photos/Centredart_aevpdw.jpg'/>">
-              Centre d’Art
-            </a> 
-            (Art Exhibition Website) <br>
-            Adding new content, updating and maintaining existing website (WordPress)
-          </li>
-        </ul>
-
-      </div>
-      <div class="col-lg-5 col-sm-12 mx-auto">
-        <h3>Internship - Web Programming<br>
-          @ <a href="https://www.aurovilleconsulting.com/" data-toggle="avc" target="_blank"
-              title="<img src='https://res.cloudinary.com/ani10/image/upload/v1605867307/Portfolio%20Photos/AVC_logo_qr76xd.png'/>">
-            Auroville Consulting
-          </a>
-        </h3>
-        <h5>January 2019 - March 2019</h5>
-        <br>
-        <p>
-          As a member of the IT Team, worked on the following projects with development, design, testing with mock data.
-        </p>
-        <ul class="cstm-list">
-          <li>
-              <a href="https://www.thesolarvillage.org/" data-toggle="solarvillage" class="blue-cstm-link" target="_blank"
-               title="<img src='https://res.cloudinary.com/ani10/image/upload/c_scale,w_800/v1604938178/Portfolio%20Photos/solarvillage_isxqsh.jpg'/>">
-                The Solar Village</a> (Search Engine) <br>
-          </li>
-          <li>
-            <a href="https://www.agpworkshops.com/" data-toggle="agp" class="blue-cstm-link" target="_blank"
-            title="<img src='https://res.cloudinary.com/ani10/image/upload/c_scale,w_800/v1604938178/Portfolio%20Photos/agpworkshops_ijlzxk.jpg'/>">
-              Auroville Green Practices Workshop</a> (Workshop Information & Booking Website) <br>
-          </li>
-          <li>
-            <a href="https://aurovilleportal.org/" data-toggle="avportal" class="blue-cstm-link" target="_blank"
-             title="<img src='https://res.cloudinary.com/ani10/image/upload/c_scale,w_800/v1604938178/Portfolio%20Photos/avportal_upxk27.jpg'/>">
-              Auroville Portal </a> (Portal to AVC & their affiliate partners' websites) <br>
-          </li>
-        </ul>
-      
-      </div>
-    </div>
-
-    <h1 id="skills" class="text-center my-1 py-5">Skills</h1>
-    
-    <div class="row text-center mb-5">
-      <ul class="icons-list">
-        <li> <i class="fab fa-html5"> </i> HTML </li>
-        <li> <i class="fab fa-css3-alt"> </i> CSS </li>
-        <li> <i class="fab fa-sass"></i> Sass/SCSS</li>
-        <li> <i class="fab fa-js-square"> </i> JavaScript </li>
-        <li> <i class="fab fa-bootstrap"> </i> Bootstrap </li>
-        <li> <i class="fab fa-react"> React</i></li>
-               
-        <li> <i class="fab fa-java"></i> Java </li>
-        <li> <i class="fab fa-php"></i> PHP </li>
-        <li> <i class="fab fa-github-alt"> Git</i> </li>
-        <li>
-          <img src="https://res.cloudinary.com/ani10/image/upload/c_scale,e_negate,w_24/v1603136167/Icons/jQuery_myosqa.png"
-            alt="JQuery Icon">
-          JQuery
-        </li>
-        <li> <i class="fas fa-database"></i> MySQL</li>
-        <li> <i class="fab fa-npm"></i> NPM </li>
-        <li> <i class="fab fa-wordpress"> WordPress</i> </li>
-        <!--
+					<li><i class="fab fa-java"></i> Java</li>
+					<li><i class="fab fa-php"></i> PHP</li>
+					<li><i class="fab fa-github-alt"> Git</i></li>
+					<li>
+						<img
+							src="https://res.cloudinary.com/ani10/image/upload/c_scale,e_negate,w_24/v1603136167/Icons/jQuery_myosqa.png"
+							alt="JQuery Icon"
+						/>
+						JQuery
+					</li>
+					<li><i class="fas fa-database"></i> MySQL</li>
+					<li><i class="fab fa-npm"></i> NPM</li>
+					<li><i class="fab fa-wordpress"> WordPress</i></li>
+					<!--
         <li> <i class="fab fa-laravel"> Laravel</i></li>
         <li> <i class="fab fa-node-js"></i> NodeJS</li>
         -->
-        <li> <i class="fab fa-angular"> Angular</i></li>
-      </ul>
-    </div>
+					<li><i class="fab fa-angular"> Angular</i></li>
+				</ul>
+			</div>
 
-    <h3 class="text-center my-3">Tools</h3>
-    <div class="row text-center">
-      <ul class="icons-list">
-        <li> <img
-            src="https://res.cloudinary.com/ani10/image/upload/c_scale,e_negate,w_24/v1603101843/Icons/visual-studio_lryln7.png"
-            alt=""> Visual Studio Code </li>
-        <li> <i class="fab fa-github"></i> GitHub</li>
-        <li> <img src="https://res.cloudinary.com/ani10/image/upload/e_negate/v1603101843/Icons/adobe-xd_x1pxz4.png" alt="Adobe XD Icon"> Adobe XD</li>
-        <li> <i class="fab fa-android"></i> Android Studio</li>
-        <li> <i class="fab fa-docker"> Docker</i> </li>
-        <li>
-          <img src="https://res.cloudinary.com/ani10/image/upload/c_scale,e_auto_color,w_24/v1603137390/Icons/eclipse_fmarga.png"
-            alt="Eclipse Icon">
-          Eclipse
-        </li>
-        <li> 
-          <img src="https://res.cloudinary.com/ani10/image/upload/c_scale,w_24/v1603134768/Icons/xampp_cgjhpk.png" alt="XAMPP Icon"> 
-          XAMPP 
-        </li>
-        <li>
-          <img src="https://res.cloudinary.com/ani10/image/upload/c_scale,e_negate,w_24/v1603137565/Icons/pycharm_nrjoqs.png"
-            alt="PyCharm Icon">
-          PYCharm
-        </li>   
-      </ul>
-    </div>    
-    
+			<h3 class="text-center my-3">Tools</h3>
+			<div class="row text-center">
+				<ul class="icons-list">
+					<li>
+						<img
+							src="https://res.cloudinary.com/ani10/image/upload/c_scale,e_negate,w_24/v1603101843/Icons/visual-studio_lryln7.png"
+							alt=""
+						/>
+						Visual Studio Code
+					</li>
+					<li><i class="fab fa-github"></i> GitHub</li>
+					<li>
+						<img
+							src="https://res.cloudinary.com/ani10/image/upload/e_negate/v1603101843/Icons/adobe-xd_x1pxz4.png"
+							alt="Adobe XD Icon"
+						/>
+						Adobe XD
+					</li>
+					<li><i class="fab fa-android"></i> Android Studio</li>
+					<li><i class="fab fa-docker"> Docker</i></li>
+					<li>
+						<img
+							src="https://res.cloudinary.com/ani10/image/upload/c_scale,e_auto_color,w_24/v1603137390/Icons/eclipse_fmarga.png"
+							alt="Eclipse Icon"
+						/>
+						Eclipse
+					</li>
+					<li>
+						<img
+							src="https://res.cloudinary.com/ani10/image/upload/c_scale,w_24/v1603134768/Icons/xampp_cgjhpk.png"
+							alt="XAMPP Icon"
+						/>
+						XAMPP
+					</li>
+					<li>
+						<img
+							src="https://res.cloudinary.com/ani10/image/upload/c_scale,e_negate,w_24/v1603137565/Icons/pycharm_nrjoqs.png"
+							alt="PyCharm Icon"
+						/>
+						PYCharm
+					</li>
+				</ul>
+			</div>
 
-    <h1 id="portfolio" class="text-center mt-1 pt-5 pb-2">Portfolio</h1>
+			<h1 id="experience" class="text-center my-1 py-5">
+				Professional Experience
+			</h1>
 
-    <div class="mt-5 row center-content">
-      <div class="col-lg-8 text-center pb-3 order-lg-12">
-        <img src="https://res.cloudinary.com/ani10/image/upload/v1605869113/Portfolio%20Photos/PseuToPy_Screenshot_oizedc.png"
-          alt="PseuToPy Website Screenshot" width="80%">
-      </div>
-      <div class="col-lg-4 order-lg-1">
-        <h4 class="text-center">PseuToPy - Generate Python code from Pseudocode<br><span class="blue-cstm">Python & JavaScript</span></h4>
-        <p>
-          Ongoing Research Project to create a tool to help learn Python.<br>
-          Working on the execution of Python code on the website client-side.
-        </p>
-        <h5>Technologies Used</h5>
-        <ul class="cstm-list" style="	columns: 2;">
-          <li>Python - Flask</li>
-          <li>HTML & CSS</li>
-          <li>JavaScript</li>
-          <li>JQuery</li>
-          <li><a class="blue-cstm-link" href="https://skulpt.org/">Skulpt</a></li>
-          <li><a class="blue-cstm-link" href="https://ace.c9.io/">Ace</a></li>
-        </ul>
-        <div class="center-content">
-          <button type="button" class="btn btn-outline-info">
-            <a href="http://www.pseutopy.com/en/home" target="_blank">
-              Website
-            </a>
-          </button>
-          <a class="px-2" href="https://github.com/PseuToPy/PseuToPy-web/tree/feat-execution" target="_blank">
-              <i class="fab fa-github fa-2x ml-2"></i>
-              Github Repository
-          </a>
+			<div class="row py-2">
+				<div class="col-lg-5 col-sm-12 mx-auto">
+					<h3>
+						Freelance - Web Developer <br />
+						@
+						<a
+							href="https://octostudio.fr/"
+							data-toggle="octostudio"
+							target="_blank"
+							title="<img src='https://res.cloudinary.com/ani10/image/upload/v1605867309/Portfolio%20Photos/OctoStudio_Logo_o3ph9n.jpg'/>"
+						>
+							Octo Studio
+						</a>
+					</h3>
+					<h5>September 2020 - Present</h5>
+					<br />
+					<p>Working as a freelancer on the following projects</p>
+					<ul class="cstm-list">
+						<li>
+							Beautify The World (Crowdfunding Platform)
+							<br /><i>In Progress</i><br />
+							Optimizing mobile version of the website (Laravel)
+						</li>
+						<li>
+							<a
+								href="https://centredart.in/workshops"
+								data-toggle="centredart"
+								class="blue-cstm-link"
+								target="_blank"
+								title="<img src='https://res.cloudinary.com/ani10/image/upload/v1604937657/Portfolio%20Photos/Centredart_aevpdw.jpg'/>"
+							>
+								Centre d’Art
+							</a>
+							(Art Exhibition Website) <br />
+							Adding new content, updating and maintaining existing website
+							(WordPress)
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-5 col-sm-12 mx-auto">
+					<h3>
+						Internship - Web Programming<br />
+						@
+						<a
+							href="https://www.aurovilleconsulting.com/"
+							data-toggle="avc"
+							target="_blank"
+							title="<img src='https://res.cloudinary.com/ani10/image/upload/v1605867307/Portfolio%20Photos/AVC_logo_qr76xd.png'/>"
+						>
+							Auroville Consulting
+						</a>
+					</h3>
+					<h5>January 2019 - March 2019</h5>
+					<br />
+					<p>
+						As a member of the IT Team, worked on the following projects with
+						development, design, testing with mock data.
+					</p>
+					<ul class="cstm-list">
+						<li>
+							<a
+								href="https://www.thesolarvillage.org/"
+								data-toggle="solarvillage"
+								class="blue-cstm-link"
+								target="_blank"
+								title="<img src='https://res.cloudinary.com/ani10/image/upload/c_scale,w_800/v1604938178/Portfolio%20Photos/solarvillage_isxqsh.jpg'/>"
+							>
+								The Solar Village</a
+							>
+							(Search Engine) <br />
+						</li>
+						<li>
+							<a
+								href="https://www.agpworkshops.com/"
+								data-toggle="agp"
+								class="blue-cstm-link"
+								target="_blank"
+								title="<img src='https://res.cloudinary.com/ani10/image/upload/c_scale,w_800/v1604938178/Portfolio%20Photos/agpworkshops_ijlzxk.jpg'/>"
+							>
+								Auroville Green Practices Workshop</a
+							>
+							(Workshop Information & Booking Website) <br />
+						</li>
+						<li>
+							<a
+								href="https://aurovilleportal.org/"
+								data-toggle="avportal"
+								class="blue-cstm-link"
+								target="_blank"
+								title="<img src='https://res.cloudinary.com/ani10/image/upload/c_scale,w_800/v1604938178/Portfolio%20Photos/avportal_upxk27.jpg'/>"
+							>
+								Auroville Portal
+							</a>
+							(Portal to AVC & their affiliate partners' websites) <br />
+						</li>
+					</ul>
+				</div>
+			</div>
 
-        </div>
-      </div>
-    </div>
+			<h1 id="about" class="text-center py-5">About Me</h1>
+			<div class="row my-2 center-content">
+				<div class="col-lg-6 col-sm-12 pb-2 center-content">
+					<img
+						class="em_gray img-rounded"
+						src="https://res.cloudinary.com/ani10/image/upload/v1604929188/Portfolio%20Photos/IMG_20200628_160607_Bokeh_mtviqf.jpg"
+						width="400px"
+						style="display: block"
+					/>
+				</div>
 
-    <div class="mt-5 row center-content">
-      <div class="col-lg-8 text-center pb-3">
-        <img src="https://res.cloudinary.com/ani10/image/upload/v1605869115/Portfolio%20Photos/ICare_Screenshot_azzxz8.png"
-          alt="Health System Website Screenshot" width="80%">
-      </div>
-      <div class="col-lg-4">
-        <h4 class="text-center">Smart Healthcare System<br><span class="blue-cstm">PHP</span></h4>
-        <p>
-          University Group Project to create a website that will display 'fake' data provided by sensors, offers registration,
-          sessions, & login features as well as communication between the different types of users.
-        </p>
-        <h5>Technologies Used</h5>
-        <ul class="cstm-list" style="	columns: 2;">
-          <li>PHP</li>
-          <li>HTML, CSS & JS</li>
-          <li>MySQL</li>
-          <li>Bootstrap</li>
-          <li>JQuery</li>
-        </ul>
-        <div class="center-content">
-          <a href="https://github.com/IcareTech-isep/Website" target="_blank">
-            <i class="fab fa-github fa-2x ml-2"></i>
-            Github Repository
-          </a>
-        </div>
-      </div>
-    </div>
+				<div class="col-lg-6 col-sm-12 pt-2">
+					<p>
+						Hello, you can call me <span class="blue-cstm">Ani</span>.<br />
+						I'm pursuing a Masters in Software Engineering Student at
+						<a class="blue-cstm-link" href="https://www.isep.fr/">ISEP</a>,
+						Paris.<br />
+						I grew up in the international city of
+						<a class="blue-cstm-link" href="https://www.auroville.org/"
+							>Auroville</a
+						>, situated in the South of India.<br /><br />
+						I started my journey in IT by attempting to build a website for my
+						high-school and ever since Web Development has become my passion.
+						<br />
+						I enjoy learning new technologies, discovering new ways to create on
+						the web, finding different approaches to showcase ideas and bring
+						them into existence. <br /><br />
+						My hobbies include playing basketball, following the NBA, gaming,
+						travelling reading manga and novels
+					</p>
+				</div>
+			</div>
+			<h1 id="contact" class="text-center mt-5 py-3">Contact</h1>
+			<div class="row">
+				<div class="col-lg-7 col-md-10 m-auto py-2 px-5 center-content">
+					<h5 class="text-center p-2">
+						Currently in search of an internship as a Developer or Software
+						Engineer starting in February 2021 for 4-6 months. <br /><br />
+						I'm interested in both front-end & back-end development; preferably
+						a position that involves both.
+					</h5>
+					<br />
+				</div>
+			</div>
+			<div class="m-auto" style="width: fit-content">
+				<button class="btn-cstm">
+					<a href="mailto:contact@r-aniruddha.com">Get In Touch</a>
+					<div class="btn-cstm__horizontal"></div>
+					<div class="btn-cstm__vertical"></div>
+				</button>
+			</div>
+		</div>
 
-    <div class="mt-5 row center-content">
-      <div class="col-lg-8 text-center pb-3 order-lg-12">
-        <img src="https://res.cloudinary.com/ani10/image/upload/v1604659546/Corona_oenngo.png" alt="Corona Website Screenshot"
-          width="80%">
-      </div>
-      <div class="col-lg-4 order-lg-1">
-        <h4 class="text-center">Covid-19 Statistics Website <br><span class="blue-cstm">Java - Spring</span></h4>
-        <p>
-          University Group Project to create a web application based on a Java framework. <br><br>
-          Retrieval of Coronavirus raw data(statistics) from APIs and then displayed in the application.
-        </p>
-        <h5>Technologies Used</h5>
-        <ul class="cstm-list" style="	columns: 2;">
-          <li>Spring Boot - Java</li>
-          <li>HTML, CSS & JS</li>
-          <li>REST APIs</li>
-          <li>JSON</li>
-          <li>Bootstrap</li>
-          <li>JQuery</li>
-        </ul>
-        <div class="center-content">
-          <a href="https://github.com/R-Aniruddha/CoronaStatistics" target="_blank">
-            <i class="fab fa-github fa-2x ml-2"></i>
-            Github Repository
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="mt-5 row center-content">
-      <div class="col-lg-8 text-center pb-3">
-        <img src="https://res.cloudinary.com/ani10/image/upload/v1604659542/AVC_Portal_giwe2o.png"
-          alt="AVC Portal Website Screenshot" width="80%">
-      </div>
-      <div class="col-lg-4">
-        <h4 class="text-center">Auroville Consulting Website Portal <br><span class="blue-cstm">Angular</span></h4>
-        <p>
-          A website portal to all of AVC and their affiliate partners' websites.
-          A mini project to rebuild an existing <a class="blue-cstm-link" href="https://aurovilleportal.org/">website</a>
-          with Angular and experiment with the framework.
-        </p>
-        <h5>Technologies Used</h5>
-        <ul class="cstm-list" style="	columns: 2;">
-          <li>Angular</li>
-          <li>HTML & SCSS</li>
-          <li>TypeScript</li>
-          <li>JSON</li>
-          <li>NPM</li>
-          <li>Material Design Theme</li>
-        </ul>
-        <div class="center-content">
-          <a href="https://github.com/R-Aniruddha/avc-portal" target="_blank">
-            <i class="fab fa-github fa-2x ml-2"></i>
-            Github Repository
-          </a>
-        </div>
-      </div>
-    </div>
-    
-    <h1 id="contact" class="text-center mt-2 py-5">Get In Touch</h1>
-    <div class="row">
-      <div class="col-lg-7 col-md-10 m-auto py-2 px-5 center-content">
-        <h5 class="text-center p-2">
-          Currently in search of an internship as a 'Web Developer' starting in February 2021 for 4-6 months. <br><br>
-          I'm interested in both front-end & back-end development; preferably a position that involves both.
-        </h5>
-      </div>
-    </div>
-    <div class="row pb-3">
-      <div class="col-lg-6 col-sm-10 m-auto px-3">
-        <form id="contact-form" action="https://formspree.io/xjvpvkda" method="POST">
-        
-          <div class="row">
-            <div class="col-lg-6 m-auto">
-              <input type="text" id="name" name="name" required placeholder=" Name">
-            </div>
-            <div class="col-lg-6 m-auto">
-              <input type="email" id="email" required name="_replyto" placeholder=" Email">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 mt-2">
-              <input type="hidden" name="_subject" value="Contact request from personal website" />
-              <textarea name="message" style="height:175px; width: 100%;"
-                placeholder=" Message"></textarea>
-            </div>
-            <button class="btn-primary" type="submit">Send</button>
-        
-          </div>
-        
-        </form>
-      </div>
-    
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="py-1 text-center" style="background-color: #1c2331">
-  
-    <div class="container">
-      <!--
+		<!-- Footer -->
+		<footer class="py-1 text-center" style="background-color: #1c2331">
+			<div class="container">
+				<!--
       <div class="row py-3">
         <div class="col-lg-4 m-auto row">
           <div class="m-auto">
@@ -417,52 +666,56 @@
   
       </div>
       -->
-      <div class="row">
-        <div class="icon-container">
-          <div class="icon icon-expand">
-            <a href="https://www.linkedin.com/in/aniruddha-ramakrishnan/" target="_blank">
-              <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-          </div>
-          <div class="icon icon-enter">
-            <a href="https://github.com/R-Aniruddha" target="_blank">
-              <i class="fab fa-github fa-2x"></i>
-            </a>
-          </div>
-          <div class="icon icon-rotate">
-            <a href="https://codepen.io/R-Aniruddha" target="_blank">
-              <i class="fab fa-codepen fa-2x"></i>
-            </a>
-          </div>
-          <div class="icon icon-collapse">
-            <a href="mailto:contact@r-aniruddha.com">
-              <i class="fas fa-envelope fa-2x"></i>
-            </a>
-          </div>
-          <!-- 
+				<div class="row">
+					<div class="icon-container">
+						<div class="icon icon-expand">
+							<a
+								href="https://www.linkedin.com/in/aniruddha-ramakrishnan/"
+								target="_blank"
+							>
+								<i class="fab fa-linkedin fa-2x"></i>
+							</a>
+						</div>
+						<div class="icon icon-enter">
+							<a href="https://github.com/R-Aniruddha" target="_blank">
+								<i class="fab fa-github fa-2x"></i>
+							</a>
+						</div>
+						<div class="icon icon-rotate">
+							<a href="https://codepen.io/R-Aniruddha" target="_blank">
+								<i class="fab fa-codepen fa-2x"></i>
+							</a>
+						</div>
+						<div class="icon icon-collapse">
+							<a href="mailto:contact@r-aniruddha.com">
+								<i class="fas fa-envelope fa-2x"></i>
+							</a>
+						</div>
+						<!-- 
           <div class="icon icon-fill"><i class="fa fa-phone"></i></div>
-          -->
-        </div>
-      </div>
-    </div>
-  
-    <div class="footer-copyright py-3">
-      Copyright 2020 ©Aniruddha
-    </div>
-  
-  </footer>
-  
+          --></div>
+				</div>
+			</div>
 
-  <script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.1/js/jquery.min.js"></script>
+			<div class="footer-copyright py-3">Copyright 2020 ©Aniruddha</div>
+		</footer>
 
-  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script
+			type="text/javascript"
+			src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.1/js/jquery.min.js"
+		></script>
 
-  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+		<script
+			type="text/javascript"
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		></script>
 
-  <!---->
-  <script src="js/script.js"></script>
+		<script
+			type="text/javascript"
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+		></script>
 
-
-</body>
-
+		<!---->
+		<script src="js/script.js"></script>
+	</body>
 </html>
