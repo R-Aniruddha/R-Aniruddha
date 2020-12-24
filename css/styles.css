@@ -26,7 +26,9 @@ body {
 }
 body {
 	position: relative;
-	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+	/*font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;*/
+	font-family: "Alegreya", serif;
+	font-weight: 500;
 }
 
 h1,
@@ -43,10 +45,10 @@ h6 {
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 2.6rem;
 }
 h2 {
-	font-size: 2.5rem;
+	font-size: 2.2rem;
 }
 
 p {
@@ -114,7 +116,7 @@ blockquote {
 .main-content {
 	background-color: var(--background-color);
 	color: var(--main-text-color);
-	padding: 1rem 1.6rem;
+	padding: 1rem 1.8rem;
 }
 
 .center-content {
@@ -219,6 +221,7 @@ nav {
 
 /* Background Gradient in smaller screens */
 .tinted-image-home {
+	padding: 0 1rem;
 	background: 
     /* top to bottom gradient */ linear-gradient(
 		rgba(13, 13, 13, 0.6),
@@ -237,6 +240,9 @@ nav {
   Styling for large devices
 */
 @media (min-width: 768px) {
+	:root {
+		font-size: 20px;
+	}
 	.main-content {
 		background-color: var(--background-color);
 		color: var(--main-text-color);
